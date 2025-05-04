@@ -54,10 +54,20 @@ pytest tests/
 
 ⸻
 
-✅ Swagger Documentation
-	•	Screenshot: docs/swagger_screenshot.png
-	•	OpenAPI JSON (if exported): docs/openapi.json
 
+✅ Swagger Documentation
+
+Due to using GitHub's browser-based environment (without a local Python runtime),
+FastAPI's Swagger UI (http://localhost:8000/docs) could not be launched.
+
+However, the main.py file correctly includes all routers from:
+- /api/user_api.py
+- /api/fitness_profile_api.py
+- /api/analytics_api.py
+
+Swagger would auto-generate documentation for these endpoints if run in a local FastAPI environment.
+
+Refer to main.py and README.md for a full breakdown of available routes.
 ⸻
 
 ✅ Author
