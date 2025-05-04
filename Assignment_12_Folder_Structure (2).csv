@@ -1,0 +1,17 @@
+Folder/File
+/mnt/data/Assignment12_Fitness_Tracker/api/user_api.py
+/mnt/data/Assignment12_Fitness_Tracker/api/fitness_profile_api.py
+/mnt/data/Assignment12_Fitness_Tracker/api/analytics_api.py
+/mnt/data/Assignment12_Fitness_Tracker/services/user_service.py
+/mnt/data/Assignment12_Fitness_Tracker/services/fitness_profile_service.py
+/mnt/data/Assignment12_Fitness_Tracker/services/analytics_report_service.py
+/mnt/data/Assignment12_Fitness_Tracker/tests/api/test_user_api.py
+/mnt/data/Assignment12_Fitness_Tracker/tests/api/test_fitness_profile_api.py
+/mnt/data/Assignment12_Fitness_Tracker/tests/api/test_analytics_api.py
+/mnt/data/Assignment12_Fitness_Tracker/tests/services/test_user_service.py
+/mnt/data/Assignment12_Fitness_Tracker/tests/services/test_fitness_profile_service.py
+/mnt/data/Assignment12_Fitness_Tracker/tests/services/test_analytics_report_service.py
+/mnt/data/Assignment12_Fitness_Tracker/docs/swagger_screenshot.png
+/mnt/data/Assignment12_Fitness_Tracker/docs/openapi.json
+/mnt/data/Assignment12_Fitness_Tracker/README.md
+/mnt/data/Assignment12_Fitness_Tracker/CHANGELOG.md
