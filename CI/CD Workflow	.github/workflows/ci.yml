@@ -1,0 +1,47 @@
+name: CI/CD Pipeline – Assignment 13
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest
+
+      - name: Run tests
+        run: pytest tests/
+
+  build-artifact:
+    needs: build-test
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Package project
+        run: |
+          zip -r fitness-tracker.zip . -x ".git"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: fitness-tracker-artifact
+          path: fitness-tracker.zip
