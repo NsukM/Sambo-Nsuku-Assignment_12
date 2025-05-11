@@ -1,8 +1,3 @@
-Here is the final cleaned-up version of your README.md for Assignment 12 and 13 — ready to copy and paste into your GitHub repo:
-
-⸻
-
-
 # Assignment 12 & 13 – Service Layer, API, and CI/CD for Fitness Tracker
 
 This repository contains the complete implementation of the Fitness Tracker system, including:
