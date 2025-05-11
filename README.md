@@ -70,6 +70,31 @@ Swagger would auto-generate documentation for these endpoints if run in a local 
 Refer to main.py and README.md for a full breakdown of available routes.
 ⸻
 
+## ✅ CI/CD Pipeline – Assignment 13
+
+### Continuous Integration (CI)
+- Triggered on every *push* or *pull request* to main
+- Runs pytest tests in /tests/
+- Fails the PR if tests fail
+
+### Continuous Delivery (CD)
+- On successful merge to main, GitHub automatically:
+  - Zips the project into fitness-tracker.zip
+  - Uploads it under "Artifacts" in the GitHub Actions tab
+
+### Branch Protection Rules
+- Pull request reviews are required
+- CI status checks must pass
+- Direct pushes to main are blocked
+- All rules are described in PROTECTION.md
+
+### Run tests locally
+bash
+pip install pytest
+pytest tests/
+
+
+
 ✅ Author
 	•	Name: Nsuku Sambo
 	•	Student Number: 221358986
