@@ -1,7 +1,3 @@
-Here is your complete and final README.md:
-
-⸻
-
 
 # Assignment 12, 13 & 14 – Fitness Tracker: API, CI/CD & Open-Source Collaboration
 
