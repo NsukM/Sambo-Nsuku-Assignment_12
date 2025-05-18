@@ -1,20 +1,30 @@
-# Assignment 12 & 13 – Service Layer, API, and CI/CD for Fitness Tracker
+Here is your complete and final README.md:
 
-This repository contains the complete implementation of the Fitness Tracker system, including:
+⸻
 
-- Assignment 12: Service Layer & RESTful API using FastAPI
-- Assignment 13: CI/CD pipeline using GitHub Actions with branch protection and automated testing
+
+# Assignment 12, 13 & 14 – Fitness Tracker: API, CI/CD & Open-Source Collaboration
+
+This repository contains the complete implementation of the Fitness Tracker system:
+
+- Assignment 12: Service Layer & RESTful API using FastAPI  
+- Assignment 13: CI/CD pipeline with GitHub Actions & branch protection  
+- Assignment 14: Open-source collaboration readiness, peer review, and onboarding support
 
 ---
 
 ## ✅ Architecture Overview
 
-- `services/` – Business logic services interacting with repositories
-- `api/` – RESTful API layer using FastAPI
-- `main.py` – FastAPI entry point
-- `tests/` – Unit and integration tests using `pytest`
-- `docs/` – Swagger UI note and OpenAPI placeholder
-- `.github/workflows/` – CI/CD GitHub Actions workflow
+- `services/` – Business logic services interacting with repositories  
+- `api/` – RESTful API layer using FastAPI  
+- `main.py` – FastAPI entry point  
+- `tests/` – Unit and integration tests using `pytest`  
+- `docs/` – Swagger UI notes, OpenAPI placeholder, screenshots  
+- `.github/workflows/` – GitHub Actions CI/CD pipeline  
+- `CONTRIBUTING.md` – How new developers can contribute  
+- `ROADMAP.md` – Future features and direction  
+- `PROTECTION.md` – Branch protection policy  
+- `LICENSE` – MIT license for open collaboration  
 
 ---
 
@@ -59,35 +69,57 @@ pytest tests/
 
 ✅ Swagger Documentation
 
-Due to using GitHub’s browser-based environment (without a local Python runtime),
-FastAPI’s Swagger UI (http://localhost:8000/docs) could not be launched.
+Due to GitHub’s browser-based environment (without a Python runtime),
+FastAPI’s Swagger UI (http://localhost:8000/docs) could not be launched here.
 
-However, the main.py file correctly includes all routers from:
+However, the main.py file includes all routers from:
 	•	/api/user_api.py
 	•	/api/fitness_profile_api.py
 	•	/api/analytics_api.py
 
-Swagger would auto-generate documentation for these endpoints if run in a local FastAPI environment.
+Swagger will auto-generate documentation if the app is run locally.
 
 ⸻
 
 ✅ CI/CD Pipeline – Assignment 13
 
 Continuous Integration (CI)
-	•	Triggered on every push or pull request to main
-	•	Runs pytest tests in /tests/
-	•	Fails the PR if tests fail
+	•	Triggered on every push and pull request to main
+	•	Runs all tests using pytest
+	•	Blocks PR if any test fails
 
 Continuous Delivery (CD)
-	•	On successful merge to main, GitHub automatically:
-	•	Zips the project into fitness-tracker.zip
-	•	Uploads it under “Artifacts” in the GitHub Actions tab
+	•	On successful merge to main, GitHub:
+	•	Compresses the project into fitness-tracker.zip
+	•	Uploads it as an artifact in the Actions tab
 
 Branch Protection Rules
-	•	Pull request reviews are required
-	•	CI status checks must pass
+	•	Pull request reviews required
+	•	Status checks (CI tests) must pass
 	•	Direct pushes to main are blocked
-	•	All rules are described in PROTECTION.md
+	•	See PROTECTION.md for full policy
+
+⸻
+
+✅ Features Available for Contribution
+
+Feature	Status	Label
+BMI calculator	To Do	good-first-issue
+Export reports to CSV	To Do	feature-request
+Nutrition API integration	To Do	feature-request
+Add Swagger examples	To Do	good-first-issue
+Improve test coverage	In Progress	good-first-issue
+
+
+⸻
+
+✅ Getting Started
+
+git clone https://github.com/NsukM/Sambo-Nsuku-Assignment_12.git
+cd Sambo-Nsuku-Assignment_12
+pip install -r requirements.txt
+uvicorn main:app --reload
+
 
 ⸻
 
